@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/YashMahale1702/monsters/static/css/main.16a741d5.css",
+    "main.js": "/YashMahale1702/monsters/static/js/main.e95b642e.js",
+    "static/js/787.71774a75.chunk.js": "/YashMahale1702/monsters/static/js/787.71774a75.chunk.js",
+    "index.html": "/YashMahale1702/monsters/index.html",
+    "main.16a741d5.css.map": "/YashMahale1702/monsters/static/css/main.16a741d5.css.map",
+    "main.e95b642e.js.map": "/YashMahale1702/monsters/static/js/main.e95b642e.js.map",
+    "787.71774a75.chunk.js.map": "/YashMahale1702/monsters/static/js/787.71774a75.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16a741d5.css",
+    "static/js/main.e95b642e.js"
+  ]
+}
