@@ -1,0 +1,40 @@
+.card-container {
+	display: flex;
+	max-width: 32rem;
+	max-height: 44rem;
+	flex: 1 1 0rem;
+	flex-direction: column;
+	background-color: #95dada;
+	border-radius: 1.5rem;
+	padding: 2.5rem;
+	cursor: pointer;
+	-moz-osx-font-smoothing: grayscale;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: transform 0.25s ease-out;
+	box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.15);
+	background: linear-gradient(135deg, #42e695 0%, #3bb2b8 100%);
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	& > img {
+		// height: 18rem;
+		// width: 18rem;
+		object-fit: contain;
+	}
+
+	& > :not(:last-child) {
+		margin-bottom: 2rem;
+	}
+
+	&_name {
+		font-size: 2.4rem;
+		font-weight: bold;
+	}
+
+	&_email {
+		font-size: 1.6rem;
+	}
+}
