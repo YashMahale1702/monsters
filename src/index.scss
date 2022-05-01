@@ -1,18 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600&display=swap');
 
+@mixin clearfix {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+//* MEDIA QUERY MANAGER
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 37.5em) {
+			@content;
+		}
+	}
+	@if $breakpoint == tab-port {
+		@media only screen and (max-width: 58em) {
+			@content;
+		}
+	}
+	@if $breakpoint == tab-land {
+		@media only screen and (max-width: 75em) {
+			@content;
+		}
+	}
+	@if $breakpoint == big-desktop {
+		@media only screen and (min-width: 112.5em) {
+			@content;
+		}
+	}
+}
+::selection {
+	color: #65799b;
+	background-color: white;
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
+
 html {
 	font-size: 62.5%;
+
+	@include respond(big-desktop) {
+		font-size: 75%;
+	}
+
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
+
+	@include respond(phone) {
+		font-size: 38%;
+	}
 }
 
 body {
 	font-family: 'IBM Plex Mono', monospace;
 	padding: 3rem 0;
-	background: linear-gradient(135deg, #65799b 0%, #5e2563 100%);
+	background-color: #65799b;
 	background-repeat: no-repeat;
 }
 
